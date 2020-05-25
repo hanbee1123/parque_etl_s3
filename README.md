@@ -8,11 +8,11 @@ The ETL process is as follows:
 
 Libraries included:
 
-import boto3
-import pandas as pd
-import os
-import sys
-import logging
-from pyathena import connect
-from datetime import datetime, timedelta
-from io import BytesIO
+1. import boto3
+2. import pandas as pd
+3. import os
+4. import sys
+5. import logging
+6. from pyathena import connect
+7. from datetime import datetime, timedelta
+8. from io import BytesIO
