@@ -8,3 +8,12 @@ The following code works as follows
 3. Data is transformed to parque file then uplaoded into s3 with partition.
 
 4. Partitioned data is then read by athena
+
+Libraries used:
+boto3
+pandas
+os
+pyarrow
+pyathena
+datetime
+io / BytesIO
