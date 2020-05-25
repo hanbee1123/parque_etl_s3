@@ -19,3 +19,6 @@ Libraries included:
 6. from pyathena import connect
 7. from datetime import datetime, timedelta
 8. from io import BytesIO
+
+RESULT:
+![Screen Shot 2020-05-25 at 5 43 06 PM](https://user-images.githubusercontent.com/46665763/82801552-727a2500-9eb8-11ea-93f4-dd137e689835.png)
