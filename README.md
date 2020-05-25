@@ -1,19 +1,18 @@
-The following code works as follows
+The ETL process is as follows:
 
-1. Parque data is extracted from S3. 
-(data is partitions in dates. Therefore, it is extracted using a for loop)
+1. Extract parquet file data from S3 using athena.
+2. Load extracted parquet data in local directory as data frame.
+3. Transform data using pandas.
+4. Load data back into boto3. (During this process, data was partitioned)
+5. Create table in athena.
 
-2. Data is transformed using pandas in local server.
+Libraries included:
 
-3. Data is transformed to parque file then uplaoded into s3 with partition.
-
-4. Partitioned data is then read by athena
-
-Libraries used:
-boto3
-pandas
-os
-pyarrow
-pyathena
-datetime
-io / BytesIO
+import boto3
+import pandas as pd
+import os
+import sys
+import logging
+from pyathena import connect
+from datetime import datetime, timedelta
+from io import BytesIO
