@@ -1,3 +1,6 @@
+![Screen Shot 2020-05-25 at 6 46 07 PM](https://user-images.githubusercontent.com/46665763/82801365-27f8a880-9eb8-11ea-8d24-c6e8ac47b76c.png)
+
+
 The ETL process is as follows:
 
 1. Extract parquet file data from S3 using athena.
